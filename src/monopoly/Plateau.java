@@ -5,11 +5,11 @@ import java.util.ArrayList;
 public class Plateau {
 	
 	private ArrayList<Case> plateau;
-	int nbCases=30;
+	int nbCases=40;
 	
 	public Plateau() {
 		plateau=new ArrayList<Case>();
-		genererCases(nbCases);
+		//genererCases(nbCases);
 	}
 	
 	public void initPion(Pion p) {
@@ -22,14 +22,15 @@ public class Plateau {
 			System.out.println(plateau.get(i));
 		}
 	}
-	
+	/*
 	public void genererCases(int nbCases) {
+		Case c=new CaseDepart();
 		for(int i=0;i<=nbCases;i++) {
 			Case c=new Case();
 			plateau.add(c);
 		}
 	}
-	
+	/*
 	public void deplacer(Joueur j, int nb) {
 		Pion p=j.getPion();
 		Case c=p.getCase();
@@ -38,7 +39,7 @@ public class Plateau {
 		Case caseSuiv=plateau.get((ind+nb)%nbCases);
 		caseSuiv.setPion(p);
 		System.out.println(j+" de la case "+ind+" a la "+caseSuiv);
-	}
+	}*/
 	
 
 }

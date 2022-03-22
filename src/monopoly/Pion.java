@@ -3,13 +3,13 @@ package monopoly;
 public class Pion {
 	
 	private Case pCase;
-	//private Joueur joueur;
+	private String couleur;
 	
-	public Pion(){
-		//this.joueur=joueur;		
+	public Pion(String couleur){
+		this.couleur=couleur;
 	}
 	
-
+	
 	
 	public Case getCase() {
 		return pCase;
