@@ -1,5 +1,6 @@
 package cases;
 
+import design.Color;
 import joueur.Joueur;
 
 import java.util.Scanner;
@@ -32,12 +33,12 @@ public class CasePropriete extends Case {
 
 	private void proposerAchat(Joueur j) {
 		// TODO Auto-generated method stub
-		System.out.println(j+"peut acheter "+this+"[Y/N]");
+		System.out.println(j+" peut acheter "+this+"[Y/N]");
 		boolean c=input(j);
 		if(c) {
 			setProprietaire(j);
+			j.takeFromCompte(prixAchat);
 		}
-		j.takeFromCompte(prixAchat);
 	}
 	
 	private void setProprietaire(Joueur j) {
@@ -63,8 +64,9 @@ public class CasePropriete extends Case {
 
 	private void payerLoyer(Joueur j) {
 		// TODO Auto-generated method stub
-		System.out.println(j+" paye "+loyer+" de loyer");
+		System.out.println(j+ Color.colors.get("purple") + " paye "+loyer+" de loyer" + Color.colors.get("reset"));
 		j.takeFromCompte(loyer);
+		proprietaire.addToCompte(loyer);
 	}
 	
 	public String toString() {

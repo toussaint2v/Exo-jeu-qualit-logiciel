@@ -9,7 +9,6 @@ public class CaseAllerPrison extends Case {
 		super();
 	}
 
-
 	@Override
 	public void action(Joueur j) {
 		// TODO Auto-generated method stub
