@@ -51,10 +51,7 @@ public class CasePropriete extends Case {
 		String input="";
 		Scanner scanner=new Scanner(System.in);
 		input=scanner.nextLine();
-		if(input=="Y") {
-			res= true;
-		}
-		else if(input=="N") {
+		if(input.equals("N") || input.equals("n")) {
 			res= false;
 		}
 		return res;
