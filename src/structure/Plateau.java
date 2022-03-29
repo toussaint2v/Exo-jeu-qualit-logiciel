@@ -53,8 +53,8 @@ public class Plateau {
 
 			}
 			else {
-				Case ci=new CaseAutre();
-				plateau.add(ci);
+				Case cp=new CasePropriete();
+				plateau.add(cp);
 			}
 		}
 	}
@@ -62,19 +62,19 @@ public class Plateau {
 
 	/*
 	public void genererCases(int nbCases) {
-		Case c=new CaseDepart();
+		cases.Case c=new cases.CaseDepart();
 		for(int i=0;i<=nbCases;i++) {
-			Case c=new Case();
+			cases.Case c=new cases.Case();
 			plateau.add(c);
 		}
 	}
 	/*
-	public void deplacer(joueur.Joueur j, int nb) {
-		monopoly.Pion p=j.getPion();
-		Case c=p.getCase();
+	public void deplacer(joueur.joueur.Joueur j, int nb) {
+		monopoly.structure.Pion p=j.getPion();
+		cases.Case c=p.getCase();
 		int ind=c.getCaseId();
 		c.removPion(p);
-		Case caseSuiv=plateau.get((ind+nb)%nbCases);
+		cases.Case caseSuiv=plateau.get((ind+nb)%nbCases);
 		caseSuiv.setPion(p);
 		System.out.println(j+" de la case "+ind+" a la "+caseSuiv);
 	}*/

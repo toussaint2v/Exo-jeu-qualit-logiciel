@@ -12,7 +12,7 @@ public class Partie {
 	private ArrayList<Joueur> joueurs;
 	private De de1;
 	private De de2;
-	//private monopoly.Plateau plateau;
+	//private monopoly.structure.Plateau plateau;
 	private int tours;
 	private Plateau plateau;
 	int nbCases=40;
@@ -38,7 +38,6 @@ public class Partie {
 				Case nextCase= Plateau.getCase((ind+d1+d2)%nbCases);
 				j.deplacer(nextCase);
 				nextCase.action(j);
-
 			}
 		}
 	}

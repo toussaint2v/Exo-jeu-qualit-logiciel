@@ -28,16 +28,12 @@ public class Joueur {
 			pCase.removJoueur(this);
 			setCase(c);
 		}
-
 	}
 	
 	public void allerPrison() {
 		System.out.println( this+ Color.colors.get("yellow") + " va en prison!" + Color.colors.get("reset"));
 		annePrison=1;
 		setCase(Plateau.getCase(10));
-
-
-
 	}
 	
 	public void sortirPrison() {

@@ -3,7 +3,7 @@ package cases;
 import design.Color;
 import joueur.Joueur;
 
-public class CaseImpot extends Case{
+public class CaseImpot extends Case {
 	
 
 	public CaseImpot() {

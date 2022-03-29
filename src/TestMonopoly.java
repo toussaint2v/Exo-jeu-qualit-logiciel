@@ -1,8 +1,9 @@
 import joueur.Joueur;
-import structure.Partie;
-import structure.Pion;
 
 import java.util.ArrayList;
+
+import controller.Controller;
+import structure.Pion;
 
 public class TestMonopoly {
 
@@ -16,11 +17,8 @@ public class TestMonopoly {
 		joueurs.add(j1);
 		joueurs.add(j2);
 		
-		Partie partie=new Partie(joueurs,30);
-		
-		partie.LancerPartie();
-		
-
+		Controller cnt=new Controller();
+		cnt.jouer(joueurs);
 	}
 
 }

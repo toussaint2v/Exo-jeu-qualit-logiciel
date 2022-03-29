@@ -16,7 +16,7 @@ public abstract class Case {
 		id=ind;
 		ind++;
 		joueurs=new ArrayList<Joueur>();
-		//pions=new ArrayList<monopoly.Pion>();
+		//pions=new ArrayList<monopoly.structure.Pion>();
 	}
 	
 	public abstract void action(Joueur j);
