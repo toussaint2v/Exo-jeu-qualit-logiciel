@@ -1,6 +1,10 @@
 package structure;
 
 import cases.*;
+import cases.Propriete.CasePropriete;
+import cases.Propriete.CaseProprieteCompagnie;
+import cases.Propriete.CaseProprieteGare;
+import cases.Propriete.CaseProprieteImmobilier;
 import joueur.Joueur;
 
 
@@ -34,28 +38,36 @@ public class Plateau {
 	public void genererCases(int nbCases) {
 		Case c=new CaseDepart();
 		plateau.add(c);
+		int j = 0;
 		for(int i=1;i<=nbCases;i++) {
+			Case cas;
 			if(i==10) {
-				Case cp=new CasePrison();
-				plateau.add(cp);
+				cas = new CasePrison();
 			}
 			else if(i==30) {
-				Case ap=new CaseAllerPrison();
-				plateau.add(ap);
+				cas = new CaseAllerPrison();
 
 			}else if(i==12) {
-				Case ap=new CaseImpot();
-				plateau.add(ap);
+				cas = new CaseImpot();
 
 			}else if(i==16) {
-				Case ap=new CaseChance();
-				plateau.add(ap);
+				cas = new CaseChance();
 
 			}
 			else {
-				Case cp=new CasePropriete();
-				plateau.add(cp);
+				if (j <= 2){
+					cas=new CaseProprieteImmobilier();
+				}
+				else if (j <= 3){
+					cas=new CaseProprieteGare();
+				}else {
+					cas=new CaseProprieteCompagnie();
+					j = 0;
+				}
+				++j;
+
 			}
+			plateau.add(cas);
 		}
 	}
 

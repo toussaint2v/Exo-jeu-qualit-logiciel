@@ -1,5 +1,6 @@
-package cases;
+package cases.Propriete;
 
+import cases.Case;
 import design.Color;
 import joueur.Joueur;
 
@@ -65,9 +66,9 @@ public class CasePropriete extends Case {
 		j.takeFromCompte(loyer);
 		proprietaire.addToCompte(loyer);
 	}
-	
 	public String toString() {
-		return super.toString()+" prix: "+prixAchat+", loyer: "+loyer;
+		return super.toString();
 	}
+
 
 }
