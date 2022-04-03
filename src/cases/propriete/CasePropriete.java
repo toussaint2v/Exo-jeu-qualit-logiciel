@@ -1,4 +1,4 @@
-package cases.Propriete;
+package cases.propriete;
 
 import cases.Case;
 import design.Color;

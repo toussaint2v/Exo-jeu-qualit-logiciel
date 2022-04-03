@@ -1,4 +1,4 @@
-package cases.Propriete;
+package cases.propriete;
 
 public class CaseProprieteCompagnie extends CasePropriete{
     private int loyer=500;

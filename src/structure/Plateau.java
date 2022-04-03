@@ -1,10 +1,9 @@
 package structure;
 
 import cases.*;
-import cases.Propriete.CasePropriete;
-import cases.Propriete.CaseProprieteCompagnie;
-import cases.Propriete.CaseProprieteGare;
-import cases.Propriete.CaseProprieteImmobilier;
+import cases.propriete.CaseProprieteCompagnie;
+import cases.propriete.CaseProprieteGare;
+import cases.propriete.CaseProprieteImmobilier;
 import joueur.Joueur;
 
 
